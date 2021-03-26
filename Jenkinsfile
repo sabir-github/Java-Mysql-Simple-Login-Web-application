@@ -29,10 +29,10 @@ pipeline {
          echo 'Always'
       }
       success {
-         echo 'Always'
+         echo 'Success'
       }
       failure {
-         echo 'Always'
+         echo 'failure'
       }
 
       
