@@ -26,13 +26,13 @@ pipeline {
     }
   post {
       always {
-         echo 'Always'
+         echo 'Always1'
       }
       success {
-         echo 'Success'
+         echo 'Success1'
       }
       failure {
-         echo 'failure'
+         echo 'failure1'
       }
 
       
