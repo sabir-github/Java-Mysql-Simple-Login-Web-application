@@ -26,7 +26,7 @@ pipeline {
     }
   post {
       always {
-         echo 'Always3'
+         echo 'Always3--'
       }
       success {
          echo 'Success3'
