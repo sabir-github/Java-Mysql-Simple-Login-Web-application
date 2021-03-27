@@ -5,6 +5,7 @@ pipeline {
              steps {
              
                  echo "Build successfull"
+                 mvn clean 
              }
              
          }
@@ -26,7 +27,7 @@ pipeline {
     }
   post {
       always {
-         echo 'Always3---fk'
+         echo 'Always3'
       }
       success {
          echo 'Success3'
