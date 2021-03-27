@@ -5,7 +5,7 @@ pipeline {
              steps {
              
                  echo "Build successfull"
-                 mvn clean 
+                 sh docker --version
              }
              
          }
