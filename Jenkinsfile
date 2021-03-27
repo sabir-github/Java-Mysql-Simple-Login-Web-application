@@ -5,7 +5,7 @@ pipeline {
              steps {
              
                  echo "Build successfull"
-                 sh docker --version
+                 docker --version
              }
              
          }
