@@ -3,6 +3,7 @@ pipeline {
     tools { 
         maven 'Maven3.6.3' 
         jdk 'JDK9.0.4' 
+        docker 'Docker'
     }    
     stages {
          stage('Initialize') {
@@ -33,6 +34,10 @@ pipeline {
              steps {
              
                  echo "deploying......."
+                 sh 'docker --version' \
+                    'docker info'
+                 
+                 
                  
              }
              
