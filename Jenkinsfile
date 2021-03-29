@@ -35,7 +35,7 @@ pipeline {
          stage('deploy') {
              steps {
              
-                 echo "deploying.......deploying.."
+                 echo "deploying.......deploying..."
                  sh 'docker --version' 
                  sh 'docker info'
                  
