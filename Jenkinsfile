@@ -8,7 +8,7 @@ pipeline {
          stage('build') {
              steps {
              
-                 echo "Build successfull"
+                 echo "Building...."
                  echo "PATH = ${PATH}"
                  echo "M2_HOME = ${M2_HOME}"
              }
