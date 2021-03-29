@@ -11,14 +11,16 @@ pipeline {
                  echo "Building...."
                  echo "PATH = ${PATH}"
                  echo "M2_HOME = ${M2_HOME}"
+                 maven clean
              }
              
          }
          stage('test') {
              steps {
               
-                 echo "test successfull"
+                 
                  echo "tesing..."
+                 echo "Test Successfull"
              }
              
          }
