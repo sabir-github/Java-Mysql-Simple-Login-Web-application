@@ -1,24 +1,25 @@
 pipeline {
     agent any
-    tools { 
-        maven 'Maven3.6.3' 
-        jdk 'JDK9.0.4' 
-        Docker 'Dockerlatest'
+    /*tools { 
+      *  maven 'Maven3.6.3' 
+      *  jdk 'JDK9.0.4' 
+    */
     }    
     stages {
          stage('Initialize') {
              steps {
              
                  echo "Building...."
-                 echo "PATH = ${PATH}"
-                 echo "M2_HOME = ${M2_HOME}"
-                 sh 'mvn -v'
+                 /*echo "PATH = ${PATH}"
+                 *echo "M2_HOME = ${M2_HOME}"
+                 *sh 'mvn -v'
+                */
              }
              
          }
          stage('build') {
              steps {       
-                 sh 'mvn clean package'
+                 /*sh 'mvn clean package'*/
              }
              
          }
@@ -26,7 +27,7 @@ pipeline {
          stage('test') {
              steps {
                  echo "tesing..."
-                 sh 'mvn test'
+                 /*sh 'mvn test'*/
              }
              
          }
