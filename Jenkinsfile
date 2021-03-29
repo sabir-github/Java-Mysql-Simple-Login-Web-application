@@ -36,9 +36,7 @@ pipeline {
              steps {
              
                  echo "deploying.......deploying..."
-                 sh 'cd /usr/bin'
-                 sh '/usr/bin/docker --version' 
-                 sh '/usr/bin/docker info'
+                 sh 'ps -ef | grep -i docker'
                  
              }
              
