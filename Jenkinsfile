@@ -18,6 +18,7 @@ pipeline {
              steps {
               
                  echo "test successfull"
+                 echo "tesing..."
              }
              
          }
