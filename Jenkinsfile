@@ -5,16 +5,24 @@ pipeline {
         jdk 'JDK9.0.4' 
     }    
     stages {
-         stage('build') {
+         stage('initialize') {
              steps {
              
                  echo "Building...."
                  echo "PATH = ${PATH}"
                  echo "M2_HOME = ${M2_HOME}"
-                 maven clean
+                 mvn clean
              }
              
          }
+         stage('build') {
+             steps {       
+             
+                 mvn clean 
+             }
+             
+         }
+         
          stage('test') {
              steps {
               
