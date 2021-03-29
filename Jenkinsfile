@@ -34,9 +34,9 @@ pipeline {
          }
          stage('deploy') {
              steps {
-             
-                 echo "deploying.......deploying..."
-                 sh 'ps -ef | grep -i docker'
+                 script {
+                   sh "docker --version"
+                 }
                  
              }
              
