@@ -37,8 +37,8 @@ pipeline {
              
                  echo "deploying.......deploying..."
                  sh 'cd /usr/bin'
-                 sh 'docker --version' 
-                 sh 'docker info'
+                 sh '/usr/bin/docker --version' 
+                 sh '/usr/bin/docker info'
                  
              }
              
