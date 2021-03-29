@@ -16,10 +16,7 @@ pipeline {
          }
          stage('build') {
              steps {       
-                 withmvn{
-                     sh 'mvn install' 
-                 }
-                 
+                 mvn install
              }
              
          }
