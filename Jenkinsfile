@@ -20,6 +20,7 @@ pipeline {
          stage('build') {
              steps {       
                  /*sh 'mvn clean package'*/
+                 echo 'building..'
              }
              
          }
@@ -35,8 +36,8 @@ pipeline {
              steps {
              
                  echo "deploying......."
-                 sh 'docker --version' \
-                    'docker info'
+                 sh 'docker --version' 
+                 sh 'docker info'
                  
              }
              
