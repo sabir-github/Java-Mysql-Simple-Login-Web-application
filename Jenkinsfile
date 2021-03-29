@@ -5,7 +5,7 @@ pipeline {
         jdk 'JDK9.0.4' 
     }    
     stages {
-         stage('initialize') {
+         stage('Initialize') {
              steps {
              
                  echo "Building...."
@@ -17,7 +17,7 @@ pipeline {
          }
          stage('build') {
              steps {       
-                 sh 'mvn clean install'
+                 sh 'mvn clean package'
              }
              
          }
@@ -25,7 +25,7 @@ pipeline {
          stage('test') {
              steps {
                  echo "tesing..."
-                 echo "Test Successfull"
+                 sh 'mvn test'
              }
              
          }
