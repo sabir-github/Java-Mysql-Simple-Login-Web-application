@@ -11,7 +11,6 @@ pipeline {
                  echo "Building...."
                  echo "PATH = ${PATH}"
                  echo "M2_HOME = ${M2_HOME}"
-                 echo "MAVEN_VERSION = ${mvn -v}"
                  sh 'mvn -v'
              }
              
